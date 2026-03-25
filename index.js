@@ -16,7 +16,10 @@ app.get('/login', (req, res) => {
 });
 app.get('/signup', (req, res) => {
   res.send('Signup route is working!');
-  
+
+});
+app.get('/settings', (req, res) => {
+  res.send('Settings route is working!');
 });
 
 
