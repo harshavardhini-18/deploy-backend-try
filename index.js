@@ -21,6 +21,9 @@ app.get('/signup', (req, res) => {
 app.get('/settings', (req, res) => {
   res.send('Settings route is working!');
 });
+app.get('/profile', (req, res) => {
+  res.send('Profile route is working!');
+});
 
 
 // 4️⃣ Use Render/Environment PORT or fallback to 3000 for local testing
