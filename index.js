@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
 app.get('/login', (req, res) => {
   res.send('Login route is working!');
 });
+app.get('/signup', (req, res) => {
+  res.send('Signup route is working!');
+});
 
 // IMPORTANT
 const PORT = process.env.PORT;
