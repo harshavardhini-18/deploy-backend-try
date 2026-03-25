@@ -1,13 +1,24 @@
-const express = require("express");
+// index.js
 
+// 1️⃣ Import Express
+const express = require('express');
 const app = express();
 
-app.get("/", (req, res) => {
-    res.send("Backend deployment working 🚀");
+// 2️⃣ Optional: parse JSON
+app.use(express.json());
+
+// 3️⃣ Define a test route
+app.get('/', (req, res) => {
+  res.send('Hello World! Your backend is live 🚀');
+});
+app.get('/login', (req, res) => {
+  res.send('Login route is working!');
 });
 
-const PORT = process.env.PORT || 3000;
+// 4️⃣ Use Railway PORT or fallback to 3000
+const PORT = 3000;
 
+// 5️⃣ Start the server
 app.listen(PORT, () => {
-    console.log("Server running on port", PORT);
+  console.log(`Server running on port ${PORT}`);
 });
