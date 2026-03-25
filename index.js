@@ -23,6 +23,9 @@ app.get('/settings', (req, res) => {
 app.get('/profile', (req, res) => {
   res.send('Profile route is working!');
 });
+app.get('/dashboard', (req, res) => {
+  res.send('Dashboard route is working!');
+});
 
 
 
